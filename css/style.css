@@ -1,0 +1,212 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat|Roboto);
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  background-color: #F1F1F1; }
+  body h1:not(.bar-name) {
+    padding-left: 30px;
+    font-size: 1.4em;
+    font-weight: 400;
+    padding-top: 1em; }
+  body .test-class {
+    width: 150%; }
+  body .hidden {
+    display: none !important; }
+  body .sidebar-custom {
+    background-color: #23282D !important;
+    color: #F1F1F1 !important; }
+  body .active-link {
+    background-color: #f1f1f1;
+    color: black;
+    transition: all 0.3s; }
+  body .grayscale {
+    filter: grayscale(100%); }
+  body h1.bar-name {
+    text-align: center; }
+  body .bar-name-container {
+    text-align: center;
+    height: 32px;
+    background-color: #23282D !important; }
+  body #navigate-to-dashboard {
+    margin-top: 1.6vh; }
+  body #piechart {
+    margin: 0 auto; }
+  body main {
+    padding: 2em;
+    margin-left: 12%;
+    height: 100vh;
+    margin-bottom: 5em; }
+    body main .tap-level {
+      width: 80vw;
+      height: 20vh;
+      background-color: white;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr); }
+  body #main-dashboard {
+    margin-bottom: 4em; }
+    body #main-dashboard .main-dashboard-stats, body #main-dashboard .bartenders-dashboard, body #main-dashboard .chart-dashboard, body #main-dashboard .taps-dashboard, body #main-dashboard .time-dashboard {
+      background-color: white;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+      padding-bottom: 4em;
+      margin-bottom: 3em; }
+    body #main-dashboard .stats-dashboard-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      width: 97%;
+      margin: 0 auto; }
+      body #main-dashboard .stats-dashboard-container section {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        margin: 1em;
+        border-radius: 5px; }
+        body #main-dashboard .stats-dashboard-container section:first-child {
+          background-color: #F06B50; }
+        body #main-dashboard .stats-dashboard-container section:nth-child(2) {
+          background-color: #9BC3EF; }
+        body #main-dashboard .stats-dashboard-container section:nth-child(3) {
+          background-color: #FABB71; }
+        body #main-dashboard .stats-dashboard-container section:nth-child(4) {
+          background-color: #78ccb3; }
+        body #main-dashboard .stats-dashboard-container section p span {
+          font-size: 3em; }
+    body #main-dashboard .bartenders {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      width: 50%;
+      margin: 0 auto;
+      text-align: center; }
+      body #main-dashboard .bartenders [class*="bartender-name"] {
+        text-transform: uppercase;
+        margin-top: 1.5em;
+        font-weight: 500; }
+      body #main-dashboard .bartenders [class*="bartender-status"] {
+        text-transform: lowercase;
+        margin-top: -1em; }
+      body #main-dashboard .bartenders img {
+        width: 70%; }
+    body #main-dashboard .taps-graph {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      width: 80%;
+      margin: 0 auto; }
+      body #main-dashboard .taps-graph .tap-full-bar {
+        height: 100px;
+        background-color: black;
+        width: 50px; }
+      body #main-dashboard .taps-graph [class*="tap-"] {
+        background-color: lightblue;
+        width: 50px;
+        margin-left: 5px; }
+  body .time-dashboard {
+    padding-bottom: 3em; }
+    body .time-dashboard .show-time {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+      width: 50%;
+      margin: 0 auto; }
+      body .time-dashboard .show-time section {
+        margin-left: 2em; }
+        body .time-dashboard .show-time section > span {
+          font-size: 2em;
+          margin-top: -1em; }
+  body #main-beer {
+    background-color: white;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+    margin-bottom: 4em; }
+  body .beers-table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 2em; }
+    body .beers-table .beer-details {
+      box-shadow: 0 0 1px rgba(34, 25, 25, 0.4);
+      border-radius: 5px;
+      padding-top: 2em;
+      padding-bottom: 2em;
+      display: grid;
+      grid-template-columns: 1fr 2fr; }
+      body .beers-table .beer-details [class*="beer-details-alcohol"] {
+        display: flex;
+        border-radius: 5px;
+        width: 8em;
+        height: 3em;
+        margin-top: -2em;
+        float: right;
+        align-self: flex-end;
+        align-items: center;
+        justify-content: center;
+        align-items: center; }
+      body .beers-table .beer-details [class*="beer-details-name"] {
+        font-size: 1.5em;
+        padding: 1em 0; }
+      body .beers-table .beer-details [class*="beer-details-category"] {
+        font-size: 1.2em; }
+      body .beers-table .beer-details [class*="beer-description"] {
+        padding-right: 1em; }
+      body .beers-table .beer-details img {
+        width: 100%;
+        opacity: 0.7;
+        margin-top: 1em; }
+  body #main-storage {
+    background-color: white;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+    margin-bottom: 4em; }
+    body #main-storage .kegs-container {
+      margin-top: 8em;
+      padding-bottom: 2em; }
+      body #main-storage .kegs-container .kegs-levels-bars {
+        display: flex;
+        align-items: flex-end;
+        width: 80%;
+        margin: 0 auto; }
+        body #main-storage .kegs-container .kegs-levels-bars [class*="keg-amount-bar"] {
+          border-radius: 5px;
+          margin-left: 1em;
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04); }
+          body #main-storage .kegs-container .kegs-levels-bars [class*="keg-amount-bar"] [class*="keg-amount"] {
+            text-align: center;
+            margin-top: -2em; }
+      body #main-storage .kegs-container .kegs-levels-text {
+        display: flex;
+        width: 80%;
+        margin: 0 auto; }
+        body #main-storage .kegs-container .kegs-levels-text div {
+          margin-left: 1em;
+          width: 5vw; }
+        body #main-storage .kegs-container .kegs-levels-text [class*="keg-name"] {
+          text-align: center;
+          height: 3em;
+          transform: rotate(-20deg); }
+        body #main-storage .kegs-container .kegs-levels-text [class*="keg-amount"] {
+          display: block;
+          text-align: center; }
+        body #main-storage .kegs-container .kegs-levels-text [class*="keg-amount"] + p {
+          margin-top: 1em; }
+      body #main-storage .kegs-container .keg-levels-legend {
+        width: 30%;
+        margin: 0 auto;
+        display: flex;
+        margin-top: 5em; }
+        body #main-storage .kegs-container .keg-levels-legend .keg-levels-enough, body #main-storage .kegs-container .keg-levels-legend .keg-levels-buy {
+          box-shadow: 0 0 1px rgba(34, 25, 25, 0.4);
+          border-radius: 5px;
+          width: 50px;
+          height: 30px; }
+        body #main-storage .kegs-container .keg-levels-legend .keg-levels-legend-each-color {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-left: 1em; }
+          body #main-storage .kegs-container .keg-levels-legend .keg-levels-legend-each-color p {
+            margin-left: 1em; }
+  body footer {
+    text-align: center;
+    margin-bottom: 1em;
+    color: gray; }
